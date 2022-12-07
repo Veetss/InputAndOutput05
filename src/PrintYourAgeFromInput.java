@@ -1,2 +1,16 @@
-package PACKAGE_NAME;public class PrintYourAgeFromInput {
+import java.util.Scanner;
+
+public class PrintYourAgeFromInput {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.printf("Enter your age: ");
+
+        int age = input.nextInt();
+
+        System.out.printf("Your age is: %d", age);
+
+        input.close();
+    }
 }
